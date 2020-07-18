@@ -13,7 +13,7 @@ class TestEx2(unittest.TestCase):
         tickets = [ticket_1, ticket_2, ticket_3]
 
         expected = ["PDX", "DCA", "NONE"]
-        result = reconstruct_trip(tickets, 3)
+        result = reconstruct_trip(tickets)
 
         self.assertTrue(expected == result)
 
@@ -34,7 +34,7 @@ class TestEx2(unittest.TestCase):
 
         expected = ["LAX", "SFO", "BHM", "FLG", "XNA", "SAP",
                     "SLC", "PIT", "ORD", "NONE"]
-        result = reconstruct_trip(tickets, 10)
+        result = reconstruct_trip(tickets)
 
         self.assertTrue(expected == result)
 
